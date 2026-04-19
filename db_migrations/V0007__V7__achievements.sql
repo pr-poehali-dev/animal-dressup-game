@@ -1,0 +1,3 @@
+CREATE TABLE t_p19850081_animal_dressup_game.achievements (id SERIAL PRIMARY KEY, name VARCHAR(200) NOT NULL, description TEXT NOT NULL, icon VARCHAR(20) NOT NULL, reward_coins INTEGER DEFAULT 50, condition_type VARCHAR(50) NOT NULL, condition_value INTEGER DEFAULT 1);
+
+CREATE TABLE t_p19850081_animal_dressup_game.player_achievements (id SERIAL PRIMARY KEY, player_id INTEGER REFERENCES t_p19850081_animal_dressup_game.players(id), achievement_id INTEGER REFERENCES t_p19850081_animal_dressup_game.achievements(id), earned_at TIMESTAMP DEFAULT NOW(), UNIQUE(player_id, achievement_id));

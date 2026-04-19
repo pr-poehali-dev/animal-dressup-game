@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Root ping",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 404,
+      "expectedBody": {"error": "Not found"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

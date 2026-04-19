@@ -1,0 +1,1 @@
+CREATE TABLE t_p19850081_animal_dressup_game.player_patterns (id SERIAL PRIMARY KEY, player_id INTEGER REFERENCES t_p19850081_animal_dressup_game.players(id), pattern_id INTEGER REFERENCES t_p19850081_animal_dressup_game.patterns(id), purchased_at TIMESTAMP DEFAULT NOW(), UNIQUE(player_id, pattern_id));

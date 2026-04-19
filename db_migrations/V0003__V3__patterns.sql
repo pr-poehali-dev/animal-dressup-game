@@ -1,0 +1,1 @@
+CREATE TABLE t_p19850081_animal_dressup_game.patterns (id SERIAL PRIMARY KEY, name VARCHAR(100) NOT NULL, description TEXT, css_value VARCHAR(200) NOT NULL, price INTEGER DEFAULT 0, is_default BOOLEAN DEFAULT FALSE);
