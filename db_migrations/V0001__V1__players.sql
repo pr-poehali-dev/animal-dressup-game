@@ -1,0 +1,1 @@
+CREATE TABLE t_p19850081_animal_dressup_game.players (id SERIAL PRIMARY KEY, code_word VARCHAR(50) UNIQUE NOT NULL, nickname VARCHAR(100) NOT NULL, coins INTEGER DEFAULT 100, created_at TIMESTAMP DEFAULT NOW());
